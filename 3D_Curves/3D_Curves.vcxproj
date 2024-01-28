@@ -129,10 +129,12 @@
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Curve3D.h" />
+    <ClInclude Include="Ellipse.h" />
     <ClInclude Include="Point3D.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

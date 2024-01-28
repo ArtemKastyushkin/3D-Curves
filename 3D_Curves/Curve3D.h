@@ -2,12 +2,14 @@
 #define CURVE_3D_H
 
 #include "Point3D.h"
+#define _USE_MATH_DEFINES
+#include <cmath>
 
 class Curve3D
 {
 public:
-    virtual Curve3D GetPoint() = 0;
-    virtual Curve3D GetFirstDerivative() = 0;
+    virtual Point3D GetPoint(double parameter) = 0;
+    virtual Point3D GetFirstDerivative(double parameter) = 0;
 };
 
 #endif

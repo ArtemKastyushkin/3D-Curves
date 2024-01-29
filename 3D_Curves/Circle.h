@@ -10,6 +10,7 @@ public:
 	Circle(double radius);
 
 	CurveType GetType() override;
+	void Info() override;
 	double GetRadius();
 };
 

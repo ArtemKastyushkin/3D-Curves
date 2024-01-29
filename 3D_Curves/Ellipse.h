@@ -12,6 +12,7 @@ public:
 	Vector3D GetPoint(double parameter) override;
 	Vector3D GetFirstDerivative(double parameter) override;
 	CurveType GetType() override;
+	void Info() override;
 protected:
 	double _xRadius;
 	double _yRadius;

@@ -25,3 +25,8 @@ CurveType Helix::GetType()
 {
 	return CurveType::Helix;
 }
+
+void Helix::Info()
+{
+	cout << GetType() << ": r = " << _radius << " h = " << _step << endl;
+}

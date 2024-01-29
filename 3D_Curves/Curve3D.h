@@ -5,9 +5,11 @@
 #include "Randomizer.h"
 #include <iostream>
 
+using namespace std;
+
 enum class CurveType {Circle, Ellipse, Helix};
 
-inline std::ostream& operator << (std::ostream& stream, const CurveType& curveType)
+inline ostream& operator << (ostream& stream, const CurveType& curveType)
 {
     switch (curveType) {
     case CurveType::Circle: return (stream << "Circle");
@@ -24,6 +26,7 @@ public:
     virtual Vector3D GetPoint(double parameter) = 0;
     virtual Vector3D GetFirstDerivative(double parameter) = 0;
     virtual CurveType GetType() = 0;
+    virtual void Info() = 0;
     virtual ~Curve3D() {};
 };
 

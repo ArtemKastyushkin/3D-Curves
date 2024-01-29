@@ -27,9 +27,10 @@ int main()
 
 	for (int i = 0; i < curves.size(); i++)
 	{
-		cout << curves[i]->GetType() << endl;
+		curves[i]->Info();
+		cout << "Point from PI/4: " << curves[i]->GetPoint(M_PI_4) << endl;
+		cout << "First derivative from PI/4: " << curves[i]->GetFirstDerivative(M_PI_4) << endl << endl;
 	}
-
 
 	return 0;
 }

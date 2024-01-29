@@ -23,3 +23,8 @@ CurveType Ellipse::GetType()
 {
 	return CurveType::Ellipse;
 }
+
+void Ellipse::Info()
+{
+	cout << GetType() << ": a = " << _xRadius << " b = " << _yRadius << endl;
+}

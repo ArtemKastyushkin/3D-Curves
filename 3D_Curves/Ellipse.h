@@ -11,7 +11,7 @@ public:
 
 	Vector3D GetPoint(double parameter) override;
 	Vector3D GetFirstDerivative(double parameter) override;
-private:
+protected:
 	double _xRadius;
 	double _yRadius;
 };

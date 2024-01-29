@@ -1,19 +1,15 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-#include "Curve3D.h"
+#include "Ellipse.h"
 
-class Circle: public Curve3D
+class Circle: public Ellipse
 {
 public:
 	Circle();
 	Circle(double radius);
 
-	Vector3D GetPoint(double parameter) override;
-	Vector3D GetFirstDerivative(double parameter) override;
 	double GetRadius();
-private:
-	double _radius;
 };
 
 #endif

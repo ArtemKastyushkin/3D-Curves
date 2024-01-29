@@ -18,3 +18,8 @@ Vector3D Ellipse::GetFirstDerivative(double parameter)
 
 	return Vector3D(x, y);
 }
+
+CurveType Ellipse::GetType()
+{
+	return CurveType::Ellipse;
+}

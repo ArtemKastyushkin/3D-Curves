@@ -15,17 +15,17 @@ public:
 		std::srand(std::time(nullptr));
 	}
 
-	Curve3D* CreateCurve()
+	Curve3D* CreateCurve() override
 	{
-		return _curveFactories[rand() % _curveFactories.size()].CreateCurve();
+		return _curveFactories[rand() % _curveFactories.size()]->CreateCurve();
 	}
 
-	void AddFactory(CurveFactory curveFactory)
+	void AddFactory(CurveFactory* curveFactory)
 	{
 		_curveFactories.push_back(curveFactory);
 	}
 private:
-	std::vector<CurveFactory> _curveFactories;
+	std::vector<CurveFactory*> _curveFactories;
 };
 
 #endif

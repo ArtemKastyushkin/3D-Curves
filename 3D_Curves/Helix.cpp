@@ -20,3 +20,8 @@ Vector3D Helix::GetFirstDerivative(double parameter)
 
 	return Vector3D(x, y, z);
 }
+
+CurveType Helix::GetType()
+{
+	return CurveType::Helix;
+}

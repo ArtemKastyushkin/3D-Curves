@@ -9,6 +9,7 @@ public:
 	Circle();
 	Circle(double radius);
 
+	CurveType GetType() override;
 	double GetRadius();
 };
 

@@ -1,8 +1,6 @@
-#define _USE_MATH_DEFINES
-#include <cmath>
 #include "Helix.h"
 
-Helix::Helix() : _radius(0.0), _step(0.0) {};
+Helix::Helix() : _radius(Randomizer::GetValue()), _step(Randomizer::GetValue()) {};
 Helix::Helix(double radius, double step) : _radius(fabs(radius)), _step(step) {}
 
 Vector3D Helix::GetPoint(double parameter)

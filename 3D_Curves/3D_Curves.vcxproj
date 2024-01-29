@@ -128,9 +128,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="CircleFactory.h" />
     <ClInclude Include="Curve3D.h" />
+    <ClInclude Include="CurveFactory.h" />
     <ClInclude Include="Ellipse.h" />
+    <ClInclude Include="EllipseFactory.h" />
     <ClInclude Include="Helix.h" />
+    <ClInclude Include="HelixFactory.h" />
+    <ClInclude Include="RandomFactory.h" />
+    <ClInclude Include="Randomizer.h" />
     <ClInclude Include="Vector3D.h" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +144,7 @@
     <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="Helix.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Randomizer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

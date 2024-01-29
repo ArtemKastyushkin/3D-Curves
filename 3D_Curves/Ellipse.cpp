@@ -1,6 +1,6 @@
 #include "Ellipse.h"
 
-Ellipse::Ellipse() : _xRadius(0.0), _yRadius(0.0) {};
+Ellipse::Ellipse() : _xRadius(Randomizer::GetValue()), _yRadius(Randomizer::GetValue()) {};
 Ellipse::Ellipse(double xRadius, double yRadius) : _xRadius(fabs(xRadius)), _yRadius(fabs(yRadius)) {}
 
 Vector3D Ellipse::GetPoint(double parameter)

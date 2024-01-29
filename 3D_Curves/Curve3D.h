@@ -2,12 +2,14 @@
 #define CURVE_3D_H
 
 #include "Vector3D.h"
+#include "Randomizer.h"
 
 class Curve3D
 {
 public:
     virtual Vector3D GetPoint(double parameter) = 0;
     virtual Vector3D GetFirstDerivative(double parameter) = 0;
+    virtual ~Curve3D() {};
 };
 
 #endif

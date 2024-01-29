@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	Circle circle(23.0);
+	Circle circle;
 	cout << circle.GetPoint(M_PI / 4.0) << endl;
 
 	return 0;

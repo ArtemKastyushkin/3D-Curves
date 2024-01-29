@@ -1,6 +1,9 @@
 #ifndef HELIX_H
 #define HELIX_H
 
+#define _USE_MATH_DEFINES
+#include <cmath>
+
 #include "Curve3D.h"
 
 class Helix : public Curve3D

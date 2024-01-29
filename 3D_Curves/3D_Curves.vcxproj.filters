@@ -18,7 +18,7 @@
     <ClInclude Include="Curve3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Point3D.h">
+    <ClInclude Include="Vector3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Circle.h">

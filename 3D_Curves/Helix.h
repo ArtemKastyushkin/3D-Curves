@@ -9,8 +9,8 @@ public:
 	Helix();
 	Helix(double radius, double step);
 
-	Point3D GetPoint(double parameter) override;
-	Point3D GetFirstDerivative(double parameter) override;
+	Vector3D GetPoint(double parameter) override;
+	Vector3D GetFirstDerivative(double parameter) override;
 private:
 	double _radius;
 	double _step;

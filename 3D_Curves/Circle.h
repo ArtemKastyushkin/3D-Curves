@@ -9,8 +9,8 @@ public:
 	Circle();
 	Circle(double radius);
 
-	Point3D GetPoint(double parameter) override;
-	Point3D GetFirstDerivative(double parameter) override;
+	Vector3D GetPoint(double parameter) override;
+	Vector3D GetFirstDerivative(double parameter) override;
 	double GetRadius();
 private:
 	double _radius;

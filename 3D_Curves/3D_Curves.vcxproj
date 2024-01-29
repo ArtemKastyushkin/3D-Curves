@@ -131,7 +131,7 @@
     <ClInclude Include="Curve3D.h" />
     <ClInclude Include="Ellipse.h" />
     <ClInclude Include="Helix.h" />
-    <ClInclude Include="Point3D.h" />
+    <ClInclude Include="Vector3D.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />

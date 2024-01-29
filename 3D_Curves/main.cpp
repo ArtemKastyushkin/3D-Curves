@@ -1,3 +1,5 @@
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "Circle.h"
 #include <iostream>
 
@@ -6,8 +8,7 @@ using namespace std;
 int main()
 {
 	Circle circle(23.0);
-	Point3D point = circle.GetPoint(M_PI / 4.0);
-	cout << point.X << endl;
+	cout << circle.GetPoint(M_PI / 4.0) << endl;
 
 	return 0;
 }

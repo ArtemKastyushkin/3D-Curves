@@ -9,8 +9,8 @@ public:
 	Ellipse();
 	Ellipse(double xRadius, double yRadius);
 
-	Point3D GetPoint(double parameter) override;
-	Point3D GetFirstDerivative(double parameter) override;
+	Vector3D GetPoint(double parameter) override;
+	Vector3D GetFirstDerivative(double parameter) override;
 private:
 	double _xRadius;
 	double _yRadius;

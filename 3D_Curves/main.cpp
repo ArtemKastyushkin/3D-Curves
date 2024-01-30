@@ -57,5 +57,12 @@ int main()
 		circleCurves[i]->Info();
 	}
 
+	double radiusSum = 0.0;
+	for (int i = 0; i < circleCurves.size(); i++)
+	{
+		radiusSum += circleCurves[i]->GetRadius();
+	}
+	cout << "\nSum of radii: " << radiusSum << endl;
+
 	return 0;
 }

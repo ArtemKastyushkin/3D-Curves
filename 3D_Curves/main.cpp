@@ -9,6 +9,11 @@
 
 using namespace std;
 
+bool compare(Circle* left, Circle* right)
+{
+	return left->GetRadius() < right->GetRadius();
+}
+
 int main()
 {
 	int curvesAmount = 10;
@@ -38,6 +43,14 @@ int main()
 		if (curves[i]->GetType() == CurveType::Circle)
 			circleCurves.push_back(dynamic_cast<Circle*>(curves[i]));
 	}
+
+	for (int i = 0; i < circleCurves.size(); i++)
+	{
+		circleCurves[i]->Info();
+	}
+
+	sort(circleCurves.begin(), circleCurves.end(), compare);
+	cout << "\nAfter sorting:" << endl;
 
 	for (int i = 0; i < circleCurves.size(); i++)
 	{

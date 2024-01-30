@@ -32,5 +32,17 @@ int main()
 		cout << "First derivative from PI/4: " << curves[i]->GetFirstDerivative(M_PI_4) << endl << endl;
 	}
 
+	vector<Circle*> circleCurves;
+	for (int i = 0; i < curves.size(); i++)
+	{
+		if (curves[i]->GetType() == CurveType::Circle)
+			circleCurves.push_back(dynamic_cast<Circle*>(curves[i]));
+	}
+
+	for (int i = 0; i < circleCurves.size(); i++)
+	{
+		circleCurves[i]->Info();
+	}
+
 	return 0;
 }

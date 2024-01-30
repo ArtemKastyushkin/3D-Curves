@@ -30,3 +30,27 @@ Curve definitions:
 - Helix is spatial and is defined by its radius and step (see the figure below). It takes 2 * PI in parametric space to make a round, i.e. any point on helix satisfies the condition C(t + 2*PI) = C(t) + {0, 0, step}.
 
 ![Helix](Helix.jpg)
+
+## Build & Run
+
+### Depends on: C++ compiler, CMake
+
+Launch a command line in the project folder and run these commands sequentially:
+```bash
+mkdir build
+```
+```bash
+cd build
+```
+```bash
+cmake ..
+```
+```bash
+cmake --build . --config Release
+```
+```bash
+cd Release/
+```
+```bash
+3D_Curves.exe
+```

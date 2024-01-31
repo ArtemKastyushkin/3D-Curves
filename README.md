@@ -1,4 +1,4 @@
-# 3D-curves
+# 3D Curves
 A test task demonstrating the implementation of a hierarchy of 3D curves.
 
 ## Task
